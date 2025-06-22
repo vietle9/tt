@@ -1,42 +1,74 @@
 
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ẩm Thực Việt</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Cuisine - Authentic & Delivered</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: Arial, sans-serif; background: #fffbe6; margin: 0; padding: 0; }
-        header { background: #e63946; color: white; padding: 20px; text-align: center; }
-        main { padding: 20px; }
-        section { margin-bottom: 30px; }
-        h2 { color: #1d3557; }
-        ul { padding-left: 20px; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+        header { background-color: #004225; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .language-switch { font-size: 14px; color: #fff; text-decoration: none; margin-left: 10px; }
+        .hero { padding: 50px; text-align: center; background-color: #fff; }
+        .hero h1 { font-size: 32px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; color: #666; }
+        .menu { padding: 40px 20px; background: #e3f2e1; }
+        .menu h2 { text-align: center; margin-bottom: 30px; }
+        .form-section { padding: 40px 20px; background: #fff; }
+        form { max-width: 600px; margin: auto; background: #f0f0f0; padding: 20px; border-radius: 10px; }
+        label { display: block; margin-top: 15px; }
+        input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+        button { margin-top: 20px; background: #004225; color: white; border: none; padding: 15px; width: 100%; font-size: 16px; cursor: pointer; }
+        footer { padding: 20px; text-align: center; background-color: #004225; color: white; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ẩm Thực Việt – Hương Vị Quê Nhà</h1>
+        <div><strong>Vietnamese Cuisine</strong></div>
+        <div>
+            <a class="language-switch" href="#">🇻🇳 Tiếng Việt</a>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Nước Ép Bình Dân</h2>
-            <ul>
-                <li>Nước cam vắt</li>
-                <li>Nước chanh tươi</li>
-                <li>Nước dứa ép</li>
-                <li>Nước ổi ép</li>
-                <li>Nước ép cà rốt</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Món Nướng Cao Cấp</h2>
-            <ul>
-                <li>Sườn bò nướng</li>
-                <li>Sò điệp Nhật nướng phô mai</li>
-                <li>Bào ngư nướng sốt truffle</li>
-            </ul>
-        </section>
-    </main>
+    <section class="hero">
+        <h1>Authentic Vietnamese Cuisine, Delivered Fresh</h1>
+        <p>Explore our traditional dishes, detox juices, BBQ sets and more – right to your doorstep.</p>
+    </section>
+    <section class="menu">
+        <h2>Our Bestsellers</h2>
+        <ul>
+            <li>Green Apple Celery Juice</li>
+            <li>BBQ Pork Ribs Combo</li>
+            <li>Tet Gift Box</li>
+            <li>Grilled Scallops with Cheese</li>
+        </ul>
+    </section>
+    <section class="form-section">
+        <form>
+            <h2>Order Now</h2>
+            <label>Full Name</label>
+            <input type="text" name="fullname" required>
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required>
+
+            <label>Select Dish</label>
+            <select name="dish">
+                <option>Green Juice Combo</option>
+                <option>BBQ Pork Ribs</option>
+                <option>Tet Gift Box</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" name="quantity" value="1" min="1">
+
+            <label>Special Notes</label>
+            <textarea name="notes"></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2025 Vietnamese Cuisine. All rights reserved.
+    </footer>
 </body>
 </html>
